@@ -35,4 +35,10 @@ public class Prato {
                 "\nPreço: R$" + this.preco + 
                 "\nServe " + this.numPessoasServidas + " pessoas.\n");
     }
+
+    // Reescrita do método toString para facilitar a escrita em arquivo
+    @Override
+    public String toString() {
+        return nome + " - " + preco + " - " + numPessoasServidas;
+    }
 }
